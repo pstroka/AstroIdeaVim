@@ -1,3 +1,8 @@
+# WIP!
+This is a fork of the incredible [IntelliG](https://github.com/gcalica/IntelliG)
+There are no changes made yet!
+The goal of this setup is to mimic the default AstroNvim mapping as closely as possible.
+
 # IntelliG
 
 [//]: # (TODO put a screenshot/gif here showcase)
