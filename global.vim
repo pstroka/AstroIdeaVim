@@ -1,24 +1,36 @@
 """"""""""
 " Global "
 """"""""""
-" Non-leader based mappings
 " Feel free to cherry pick which mappings you like here rather than importing this entire module
 
 " FIXME Recent Projects and Blackhole register does not initialize on startup. Only when you reload vimrc once does it work
 
+let g:WhichKeyDesc_leader = "<leader> +Leader"
+
+let g:WhichKeyDesc_goto_definition = "gy Definition of current type"
+map gy <Action>(GotoTypeDeclaration)
+
+let g:WhichKeyDesc_goto_implementation = "gI Implementation of current symbol"
+map gI <Action>(GotoImplementation)
+
+let g:WhichKeyDesc_goto_declaration = "gD Declaration of current symbol"
+map gD <Action>(GotoDeclaration)
+
+let g:WhichKeyDesc_search_references = "gr Search references"
+map gr <Action>(ShowUsages)
+
+let g:WhichKeyDesc_comment_line = "<leader>/ Toggle comment line"
+map <leader>/ <Action>(CommentByLineComment)
+
+let g:WhichKeyDesc_explorer_focus = "<leader>o Toggle explorer focus"
+map <leader>o <Action>(SelectInProjectView)
+
+let g:WhichKeyDesc_close_buffer = "<leader>c Close buffer"
+map <leader>c <Action>(CloseContent)
+
+
 " Ergonomic escape - other alternative keys I used in the past: jk, <C-j>
 map <C-c> <Esc>
-
-" Easier navigation
-map H ^
-" NOTE: IdeaVim's smart join can be triggered using Ctrl + Shift + J
-map J 5j
-map K 5k
-map L $
-
-" Faster change/delete of a word
-map C ciw
-map D daw
 
 " Forward/Back
 map <C-o> <Action>(Back)
@@ -37,9 +49,6 @@ map <A-j> <Action>(MoveStatementDown)
 map <A-k> <Action>(MoveStatementUp)
 map <A-S-J> <Action>(MoveLineDown)
 map <A-S-K> <Action>(MoveLineUp)
-
-" Start newline without entering insert mode and maintains cursor position
-map <CR> m`o<Esc>``
 
 " Open Terminal
 " TIP: When in the Terminal, press Escape to switch focus back to the editor without closing Terminal
@@ -62,3 +71,4 @@ map <leader>' "_
 " Deleting with "x" key puts it into blackhole register by default
 " Solves the use case mentioned above for the "x" key
 noremap x "_x
+

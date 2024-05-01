@@ -1,33 +1,22 @@
-""""""""""""""""
-" Code Actions "
-""""""""""""""""
-" Show Intention Actions, Reformat Code, Refactor, etc...
-let g:WhichKeyDesc_code_action                                                = "<leader>c +Code Actions"
+let g:WhichKeyDesc_language_tools                                             = "<leader>l +Language Tools"
 
-" Show quick fixes
-let g:WhichKeyDesc_code_action_show_quick_fixes                               = "<leader>cc Quick Fixes"
-map <leader>cc <Action>(ShowIntentionActions)
+let g:WhichKeyDesc_language_tools_code_actions                                = "<leader>la Code Actions"
+map <leader>la <Action>(ShowIntentionActions)
 
-" Format code
-let g:WhichKeyDesc_code_action_format_code                                    = "<leader>cf Format Code"
-map <leader>cf <Action>(ReformatCode)
+let g:WhichKeyDesc_language_tools_format_code                                 = "<leader>lf Format Code"
+map <leader>lf <Action>(ReformatCode)
 
-" Optimize imports
-let g:WhichKeyDesc_code_action_optimize_imports                               = "<leader>co Optimize Imports"
-map <leader>co <Action>(OptimizeImports)
+let g:WhichKeyDesc_language_tools_optimize_imports                            = "<leader>lo Optimize Imports"
+map <leader>lo <Action>(OptimizeImports)
 
-" Refactor This menu
-" Note: This is a smaller, numbered version of the main Refactor menu. See ~/.intellig/intellij/menus.vim
-let g:WhichKeyDesc_code_action_refactor                                       = "<leader>cr Refactor"
-map <leader>cr <Action>(Refactorings.QuickListPopupAction)
+let g:WhichKeyDesc_language_tools_refactor                                    = "<leader>lR Refactor"
+map <leader>lR <Action>(Refactorings.QuickListPopupAction)
 
-" Open surround template menu
-let g:WhichKeyDesc_code_action_surround_template                              = "<leader>cs Surround Template"
-map <leader>cs <Action>(SurroundWith)
+let g:WhichKeyDesc_language_tools_rename                                      = "<leader>lr Rename"
+map <leader>lr <Action>(RenameElement)
 
-" Puts carets at the end of selected lines
-let g:WhichKeyDesc_code_action_add_carets_to_end_of_line                      = "<leader>c; Put Carets at End of Selected Lines"
-map <leader>c; <Action>(EditorAddCaretPerSelectedLine)
+let g:WhichKeyDesc_language_tools_search_symbol                               = "<leader>ls Search Symbol"
+map <leader>ls <Action>(FileStructurePopup)
 
-" Other mappings that exist in this category:
-" See .intellig/plugins_intellij/string_manipulation.vim
+let g:WhichKeyDesc_language_tools_add_carets_to_end_of_line                   = "<leader>l; Put Carets at End of Selected Lines"
+map <leader>l; <Action>(EditorAddCaretPerSelectedLine)

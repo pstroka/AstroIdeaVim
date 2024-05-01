@@ -1,17 +1,15 @@
 # WIP!
-This is a fork of the incredible [IntelliG](https://github.com/gcalica/IntelliG).
+There is still a lot to do, but the most important mappings (for me) have been added.
 
-There are no changes made yet!
+For some reason not all mappings are loaded on startup and IdeaVim has to be reloaded after each startup.
 
-The goal of this setup is to mimic the default AstroNvim mapping as closely as possible.
-
-# IntelliG
-
+# AstroIdeaVim
 [//]: # (TODO put a screenshot/gif here showcase)
-This is my personal [IdeaVim](https://plugins.jetbrains.com/plugin/164-ideavim) configuration. 
-Adds mappings and categorizes many IntelliJ actions which also includes complete mapping descriptions via [Which-Key](https://plugins.jetbrains.com/plugin/15976-which-key).  
+The goal of this setup is to mimic the default AstroNvim mapping that I use every day so that I can feel at home when I need to use IntelliJ Idea.
 
-It used to be a single massive .ideavimrc file. But now that I'm publicly publishing it, I reorganized it to be easier to customize if people wanted to use and build on top of my setup.
+This is a fork of the incredible [IntelliG](https://github.com/gcalica/IntelliG) [IdeaVim](https://plugins.jetbrains.com/plugin/164-ideavim) configuration.
+
+Adds mappings and categorizes many IntelliJ actions which also includes complete mapping descriptions via [Which-Key](https://plugins.jetbrains.com/plugin/15976-which-key).  
 
 # Features
 * Mappings for many helpful and common IntelliJ workflow actions
@@ -40,6 +38,7 @@ adding keybindings.
     * `code_actions.vim` - show intention actions, reformat code, refactor, etc...
     * `files.vim` - open and search files
     * `folding.vim` - collapse/expand regions 
+    * `git.vim` - git operations
     * `menus.vim` - mappings to various menus
     * `multiple_cursors.vim` - emulates the vim-multiple-cursors plugin with IntelliJ's builtin actions
     * `searchfindreplace.vim` - find and replace, and search: everywhere, classes, files, actions, locations, etc...
@@ -71,10 +70,10 @@ Which-Key if you want the popup menu of the keybindings. The rest are to your pr
     * [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets) - only has one mapping
 2. Clone the repository in your home directory:
 ```
-git clone https://github.com/gcalica/IntelliG ~/.intellig
+git clone https://github.com/pstroka/AstroIdeaVim ~/.AstroIdeaVim
 ```
 3. Open the `~/.ideavimrc` file 
-   * If you want the full exact setup, just add this line to the top of your .ideavimrc file: `source ~/.intellig/intellig.vim` 
+   * If you want the full exact setup, just add this line to the top of your .ideavimrc file: `source ~/.AstroIdeaVim/intellig.vim` 
    * If you want to customize your own setup just copy all the contents of `intellig.vim` into your `~/.ideavimrc` file, then delete/comment out the modules you don't want.
 4. Reload IdeaVim and restart IntelliJ
 

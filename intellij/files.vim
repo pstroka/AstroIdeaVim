@@ -1,36 +1,16 @@
-"""""""""
-" Files "
-"""""""""
-" Open and search files
-let g:WhichKeyDesc_files                               = "<leader>f +Files"
+let g:WhichKeyDesc_find                               = "<leader>f +Find"
 
-" Search File
-let g:WhichKeyDesc_files_search                        = "<leader>ff Search File"
+let g:WhichKeyDesc_find_files                         = "<leader>ff Find files"
 map <leader>ff <Action>(GotoFile)
 
-" Select File in Project View
-let g:WhichKeyDesc_files_select_in_project_view        = "<leader>fF Select File In Project View"
-map <leader>fF <Action>(SelectInProjectView)
+let g:WhichKeyDesc_find_history                       = "<leader>fo Find history"
+map <leader>fo <Action>(RecentFiles)
 
-" Search Recent Files
-let g:WhichKeyDesc_files_recent_files                  = "<leader>fr Recent Files"
-map <leader>fr <Action>(RecentFiles)
+let g:WhichKeyDesc_find_words                         = "<leader>fw Find words"
+map <leader>fw <Action>(FindInPath)
 
-" Search Recently Changed Files
-let g:WhichKeyDesc_files_recent_files_changed          = "<leader>fR Recently CHANGED Files"
-map <leader>fR <Action>(RecentChangedFiles)
+let g:WhichKeyDesc_find_buffers                       = "<leader>fb Find buffers"
+map <leader>fb <Action>(Switcher)
 
-let g:WhichKeyDesc_files_recent_locations              = "<leader>fl Recent Locations"
-map <leader>fl <Action>(RecentLocations)
-
-" TODO find action for Recently Changed Locations
-" let g:WhichKeyDesc_files_recent_locations_changed    = "<leader>fL Recently CHANGED Locations"
-" map <leader>fL <Action>(?)
-
-" Show navigation bar
-let g:WhichKeyDesc_files_navigation_bar                = "<leader>fn Navigation Bar"
-map <leader>fn <Action>(ShowNavBar)
-
-" Tab Switcher
-let g:WhichKeyDesc_files_tab_switcher                  = "<leader>ft Tab Switcher"
-map <leader>ft <Action>(Switcher)
+let g:WhichKeyDesc_find_words_in_buffer               = "<leader>f/ Find words in current buffer"
+map <leader>f/ <Action>(Find)
