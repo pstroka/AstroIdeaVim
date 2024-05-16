@@ -1,8 +1,6 @@
 # WIP!
 There is still a lot to do, but the most important mappings (for me) have been added.
 
-For some reason not all mappings are loaded on startup and IdeaVim has to be reloaded after each startup.
-
 # AstroIdeaVim
 [//]: # (TODO put a screenshot/gif here showcase)
 The goal of this setup is to mimic the default AstroNvim mapping that I use every day so that I can feel at home when I need to use IntelliJ Idea.

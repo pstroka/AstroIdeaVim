@@ -12,10 +12,6 @@
     " Editor Actions, Right: <C-l>
 
 "" ------------------------------------------------------------------------------------
-" Non-leader based mappings
-" Feel free to cherry pick which mappings you like here rather than importing this entire module
-source ~/.AstroIdeaVim/global.vim
-
 " General VIM Settings
 source ~/.AstroIdeaVim/general_settings.vim
 
@@ -62,7 +58,7 @@ source ~/.AstroIdeaVim/intellij/windows.vim
 " <C-x> - skip this occurrence
 " <C-p> - unselect this occurrence and go back to previous occurrence
 " <leader><C-n> - select all occurrences under cursor
-source ~/.AstroIdeaVim/intellij/multiple_cursors.vim
+" source ~/.AstroIdeaVim/intellij/multiple_cursors.vim
 
 " Bookmarks - manage bookmarks
 source ~/.AstroIdeaVim/intellij/bookmarks.vim
@@ -146,3 +142,7 @@ source ~/.AstroIdeaVim/plugins_intellij/string_manipulation.vim
 " Required IntelliJ Plugin: https://plugins.jetbrains.com/plugin/10080-rainbow-brackets
 " Rainbowify pairs of brackets
 source ~/.AstroIdeaVim/plugins_intellij/rainbow_brackets.vim
+
+" Non-leader based mappings
+" Feel free to cherry pick which mappings you like here rather than importing this entire module
+source ~/.AstroIdeaVim/global.vim

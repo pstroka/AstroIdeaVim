@@ -16,8 +16,8 @@ map [b <Action>(PreviousTab)
 let g:WhichKeyDesc_previous_split                     = "[s Split"
 map [s <Action>(PrevSplitter)
 
-let g:WhichKeyDesc_previous_method                    = "[m Method"
-map [m <Action>(MethodUp)
+" let g:WhichKeyDesc_previous_method                    = "[m Method"
+" map [m <Action>(MethodUp)
 
 " let g:WhichKeyDesc_previous_bookmark                  = "[b Bookmark"
 " map [b <Action>(GotoPreviousBookmark)

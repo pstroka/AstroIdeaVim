@@ -28,6 +28,23 @@ map <leader>o <Action>(SelectInProjectView)
 let g:WhichKeyDesc_close_buffer = "<leader>c Close buffer"
 map <leader>c <Action>(CloseContent)
 
+" map vaf 0]MvaBo[M$wo
+" map vif 0]MviB
+
+" FIXME: doesn't work if there is no function or variable above
+let g:WhichKeyDesc_visual_around_function = "vaf around function"
+map vaf 0]Mv[M$wo
+let g:WhichKeyDesc_visual_inside_function = "vif inside function"
+map vif 0]Mvi{
+
+map " <Action>(PasteMultiple)
+
+map <C-=> <Action>(EditorIncreaseFontSizeGlobal)
+map <C--> <Action>(EditorDecreaseFontSizeGlobal)
+map <C-0> <Action>(EditorResetFontSizeGlobal)
+
+map <C-d> <C-d>M
+map <C-u> <C-u>M
 
 " Ergonomic escape - other alternative keys I used in the past: jk, <C-j>
 map <C-c> <Esc>
@@ -55,8 +72,8 @@ map <A-S-K> <Action>(MoveLineUp)
 map <C-t> <Action>(ActivateTerminalToolWindow)
 
 " Recent Projects
-let g:WhichKeyDesc_recent_projects    = "<leader>p Recent Projects"
-map <leader>p <Action>(RecentProjectListGroup)
+let g:WhichKeyDesc_recent_projects    = "<leader>SF Recent Projects"
+map <leader>SF <Action>(RecentProjectListGroup)
 
 " Easier prefixing with blackhole register ("_)
     " Use case for blackhole register: deleting something while maintaining your current yanked code
