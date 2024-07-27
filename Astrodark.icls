@@ -1,14 +1,9 @@
 <scheme name="Astrodark" version="142" parent_scheme="Darcula">
-  <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
     <property name="ide">Idea</property>
-    <property name="ideVersion">2024.1.0.0</property>
+    <property name="ideVersion">2024.1.2.0.0</property>
     <property name="originalScheme">Astrodark</property>
   </metaInfo>
-  <option name="LINE_SPACING" value="1.0" />
-  <option name="EDITOR_FONT_SIZE" value="14" />
-  <option name="EDITOR_FONT_NAME" value="FiraCode Nerd Font" />
-  <option name="EDITOR_LIGATURES" value="true" />
   <colors>
     <option name="ADDED_LINES_COLOR" value="98c379" />
     <option name="ANNOTATIONS_COLOR" value="a0a7b4" />
@@ -165,7 +160,7 @@
     </option>
     <option name="BREAKPOINT_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="743d3d" />
+        <option name="BACKGROUND" value="412222" />
       </value>
     </option>
     <option name="BUILDOUT.KEY">
@@ -874,8 +869,7 @@
     </option>
     <option name="EXECUTIONPOINT_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="0" />
-        <option name="BACKGROUND" value="c7c7ff" />
+        <option name="BACKGROUND" value="6e3a3a" />
       </value>
     </option>
     <option name="FIRST SYMBOL IN LIST">
@@ -1093,7 +1087,7 @@
     </option>
     <option name="IDENTIFIER_UNDER_CARET_ATTRIBUTES">
       <value>
-        <option name="BACKGROUND" value="282c38" />
+        <option name="BACKGROUND" value="252933" />
         <option name="ERROR_STRIPE_COLOR" value="4d6168" />
       </value>
     </option>
