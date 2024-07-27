@@ -16,10 +16,6 @@ map <leader>sr <Action>(Replace)
 let g:WhichKeyDesc_sfr_replace_path                             = "<leader>sR Replace in Path"
 map <leader>sR <Action>(ReplaceInPath)
 
-
-"" Popup Search Menus
-" Note: The Search Files is in ~/.intellig/intellij/files.vim
-
 " The all powerful Search Everywhere
 let g:WhichKeyDesc_sfr_search_everywhere                        = "<leader>se Search Everywhere"
 map <leader>se <Action>(SearchEverywhere)

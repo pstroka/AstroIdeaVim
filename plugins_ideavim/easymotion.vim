@@ -1,7 +1,7 @@
 """"""""""""""
 " EasyMotion "
 """"""""""""""
-" NOTE: I no longer use this plugin but I have left it in. Uncomment in "intellig.vim" to enable.
+" NOTE: I no longer use this plugin but I have left it in. Uncomment in "AstroIdea.vim" to enable.
 "       See README.md under 'Misc Tips' for the differences between EasyMotion vs Sneak vs AceJump
 "       to determine if you really need this plugin.
 
