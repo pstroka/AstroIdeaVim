@@ -54,6 +54,3 @@ map <leader>usl <Action>(EditorDecreaseFontSizeGlobal)
 " Only works if you trigger the increase/decrease ALL font size actions
 let g:WhichKeyDesc_ui_font_size_reset                                          = "<leader>usr Reset Font Size"
 map <leader>usr <Action>(EditorResetFontSize)
-
-" Other mappings that exist in this category:
-" See ~/.intellig/plugins_intellij/rainbow_brackets.vim

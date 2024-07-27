@@ -4,7 +4,7 @@
 " File, Edit, View, ...etc 
 let g:WhichKeyDesc_main_menus                                    = "<leader>m +Main Menus"
 
-let g:WhichKeyDesc_main_menus_all                               = "<leader>mm All Menus"
+let g:WhichKeyDesc_main_menus_all                                = "<leader>mm All Menus"
 map <leader>mm <Action>(MainMenu)
 
 let g:WhichKeyDesc_main_menus_file                               = "<leader>m1 File"

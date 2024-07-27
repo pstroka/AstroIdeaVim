@@ -1,9 +1,6 @@
 """"""""""
 " Global "
 """"""""""
-" Feel free to cherry pick which mappings you like here rather than importing this entire module
-
-" FIXME Recent Projects and Blackhole register does not initialize on startup. Only when you reload vimrc once does it work
 
 let g:WhichKeyDesc_leader = "<leader> +Leader"
 
@@ -28,8 +25,14 @@ map <leader>/ <Action>(CommentByLineComment)
 let g:WhichKeyDesc_explorer_focus = "<leader>o Toggle explorer focus"
 map <leader>o <Action>(SelectInProjectView)
 
+let g:WhichKeyDesc_quit_window = "<leader>q Quit window"
+map <leader>q <Action>(CloseAllEditors)
+
+let g:WhichKeyDesc_exit_ide = "<leader>Q Exit IDE"
+map <leader>Q <Action>(Exit)
+
 let g:WhichKeyDesc_close_buffer = "<leader>c Close buffer"
-map <leader>c <Action>(CloseContent)
+map <leader>c <Action>(CloseEditor)
 
 " map vaf 0]MvaBo[M$wo
 " map vif 0]MviB
@@ -56,7 +59,7 @@ map <F9> <Action>(ToggleLineBreakpoint)
 
 " map <F7> <Action>(ActivateTerminalToolWindow)
 
-" Ergonomic escape - other alternative keys I used in the past: jk, <C-j>
+" Ergonomic escape
 map <C-c> <Esc>
 
 " Forward/Back
@@ -68,6 +71,9 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+
+map \ <Action>(SplitHorizontally)
+map <Bar> <Action>(SplitVertically)
 
 " Move code using h/j/k/l rather than IntelliJ's keybindings that uses arrow keys
 map <A-h> <Action>(MoveElementLeft)

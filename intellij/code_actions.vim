@@ -6,7 +6,7 @@ map <leader>la <Action>(ShowIntentionActions)
 let g:WhichKeyDesc_language_tools_run_config                                  = "<leader>lL Run configurations"
 map <leader>lL <Action>(RunContextPopupGroup)
 
-let g:WhichKeyDesc_language_tools_refresh                                     = "<leader>ll Refresh"
+let g:WhichKeyDesc_language_tools_refresh                                     = "<leader>ll Refresh maven"
 map <leader>ll <Action>(Maven.Reimport)
 
 let g:WhichKeyDesc_language_tools_format_code                                 = "<leader>lf Format Code"
