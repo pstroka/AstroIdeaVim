@@ -39,7 +39,6 @@ Just want an out-of-the-box config to build on top of? See [installation](#insta
 * /plugins_ideavim/* - Modules for mappings and enabling of IdeaVim plugins. See [supported plugins](#supported-plugins) for more info on each plugin
     * `argtextobj.vim`
     * `commentary.vim`
-    * `easymotion.vim`
     * `exchange.vim`
     * `highlightedyank.vim`
     * `nerdtree.vim`
@@ -64,10 +63,6 @@ echo "source ~/.AstroIdeaVim/AstroIdea.vim" >> ~/.ideavimrc
 
 # Supported Plugins
 The following [IdeaVim plugins](https://github.com/JetBrains/ideavim/wiki/IdeaVim-Plugins#ideavim-plugins) are supported:
-* EasyMotion - quicker cursor navigation (disabled; uncomment in AstroIdea.vim to enable)
-  * Required Plugins:
-    * [AceJump](https://plugins.jetbrains.com/plugin/7086-acejump)
-    * [EasyMotion](https://plugins.jetbrains.com/plugin/13360-ideavim-easymotion)
 * Sneak - simpler cursor navigation
 * NERDTree - file system explorer
 * surround - mappings to add, delete, and change surroundings of selected text

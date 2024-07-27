@@ -104,14 +104,6 @@ source ~/.AstroIdeaVim/plugins_ideavim/surround.vim
 "   gcc - comment entire line
 source ~/.AstroIdeaVim/plugins_ideavim/commentary.vim
 
-" Fully featured cursor navigation within a file
-"   Required IntelliJ Plugin: https://github.com/AlexPl292/IdeaVim-EasyMotion
-"   Required IntelliJ Plugin: https://plugins.jetbrains.com/plugin/7086-acejump
-" NOTE: I no longer use this plugin but I have left it in. Uncomment in AstroIdea.vim" to enable.
-"       See README.md under 'Misc Tips' for the differences between EasyMotion vs Sneak vs AceJump
-"       to determine if you really need this plugin.
-" source ~/.AstroIdeaVim/plugins_ideavim/easymotion.vim
-
 " Simpler cursor navigation within a file
 "   s{char}{char} - Sneak forward; type s followed by two characters
 "   S{char}{char} - Sneak backward; type S followed by two characters
