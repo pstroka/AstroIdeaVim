@@ -4,8 +4,8 @@
 " Previous actions - prefixed by the left square bracket [
 let g:WhichKeyDesc_previous                           = "[ +Previous"
 
-let g:WhichKeyDesc_previous_word_at_caret             = "[[ Word at Caret"
-map [[ <Action>(FindPrevWordAtCaret)
+" let g:WhichKeyDesc_previous_word_at_caret             = "[[ Word at Caret"
+" map [[ <Action>(FindPrevWordAtCaret)
 
 let g:WhichKeyDesc_previous_error                     = "[e Error"
 map [e <Action>(GotoPreviousError)
@@ -15,6 +15,18 @@ map [b <Action>(PreviousTab)
 
 let g:WhichKeyDesc_previous_split                     = "[s Split"
 map [s <Action>(PrevSplitter)
+
+let g:WhichKeyDesc_previous_diagnostic                = "[d Diagnostic"
+map [d <Action>(GotoPreviousError)
+
+let g:WhichKeyDesc_previous_git_hunk                  = "[g Git hunk"
+map [g <Action>(VcsShowPrevChangeMarker)
+
+let g:WhichKeyDesc_previous_function                  = "[f Function"
+map [f [M%{w
+
+" let g:WhichKeyDesc_previous_function                  = "[f Function"
+" map [f [m[Me^
 
 " let g:WhichKeyDesc_previous_method                    = "[m Method"
 " map [m <Action>(MethodUp)

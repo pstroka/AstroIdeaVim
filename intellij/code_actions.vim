@@ -24,5 +24,8 @@ map <leader>lr <Action>(RenameElement)
 let g:WhichKeyDesc_language_tools_search_symbol                               = "<leader>ls Search Symbol"
 map <leader>ls <Action>(FileStructurePopup)
 
+let g:WhichKeyDesc_language_tools_goto_test                                   = "<leader>lT Goto test"
+map <leader>lT <Action>(GotoTest)
+
 let g:WhichKeyDesc_language_tools_add_carets_to_end_of_line                   = "<leader>l; Put Carets at End of Selected Lines"
 map <leader>l; <Action>(EditorAddCaretPerSelectedLine)

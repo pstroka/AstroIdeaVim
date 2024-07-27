@@ -19,6 +19,9 @@ map gD <Action>(GotoDeclaration)
 let g:WhichKeyDesc_search_references = "gr Search references"
 map gr <Action>(ShowUsages)
 
+let g:WhichKeyDesc_hover_diagnostics = "gl Hover diagnostics"
+map gl <Action>(ShowErrorDescription)
+
 let g:WhichKeyDesc_comment_line = "<leader>/ Toggle comment line"
 map <leader>/ <Action>(CommentByLineComment)
 
@@ -39,12 +42,19 @@ map vif 0]Mvi{
 
 map " <Action>(PasteMultiple)
 
-map <C-=> <Action>(EditorIncreaseFontSizeGlobal)
-map <C--> <Action>(EditorDecreaseFontSizeGlobal)
-map <C-0> <Action>(EditorResetFontSizeGlobal)
+map S ddO
+
+map <C-=> <Action>(ZoomInIdeAction)
+map <C--> <Action>(ZoomOutIdeAction)
+map <C-0> <Action>(ResetIdeScaleAction)
 
 map <C-d> <C-d>M
 map <C-u> <C-u>M
+
+map <F5> <Action>(Resume)
+map <F9> <Action>(ToggleLineBreakpoint)
+
+" map <F7> <Action>(ActivateTerminalToolWindow)
 
 " Ergonomic escape - other alternative keys I used in the past: jk, <C-j>
 map <C-c> <Esc>

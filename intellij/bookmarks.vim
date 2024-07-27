@@ -22,3 +22,6 @@ map <leader>bm <Action>(ToggleBookmarkWithMnemonic)
 " Rename bookmark
 let g:WhichKeyDesc_bookmark_rename                      = "<leader>br Rename Bookmark"
 map <leader>br <Action>(EditBookmark)
+
+let g:WhichKeyDesc_buffer_previous                      = "<leader>bp Previous Buffer"
+map <leader>bp <C-6>

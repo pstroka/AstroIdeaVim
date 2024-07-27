@@ -32,3 +32,7 @@ map <leader>gp <Action>(VcsShowCurrentChangeMarker)
 
 let g:WhichKeyDesc_git_branches                           = "<leader>gb Git branches"
 map <leader>gb <Action>(Git.Branches)
+
+let g:WhichKeyDesc_git_compare_with_branch                = "<leader>gD Compare with branch"
+map <leader>gD <Action>(Git.CompareWithBranch)
+
