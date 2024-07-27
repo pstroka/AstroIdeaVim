@@ -20,10 +20,14 @@ let g:WhichKeyDesc_hover_diagnostics = "gl Hover diagnostics"
 map gl <Action>(ShowErrorDescription)
 
 let g:WhichKeyDesc_comment_line = "<leader>/ Toggle comment line"
-map <leader>/ <Action>(CommentByLineComment)
+nmap <leader>/ gcc
+vmap <leader>/ gc
 
 let g:WhichKeyDesc_explorer_focus = "<leader>o Toggle explorer focus"
 map <leader>o <Action>(SelectInProjectView)
+
+let g:WhichKeyDesc_explorer = "<leader>e Toggle explorer"
+map <leader>e :NERDTreeToggle<CR>
 
 let g:WhichKeyDesc_quit_window = "<leader>q Quit window"
 map <leader>q <Action>(CloseAllEditors)

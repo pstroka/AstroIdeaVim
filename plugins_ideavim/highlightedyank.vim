@@ -6,4 +6,5 @@
 set highlightedyank
 
 " The highlight duration. Default is 1000 ms. A negative number makes the highlight persistent
-let g:highlightedyank_highlight_duration = "1500"
+let g:highlightedyank_highlight_duration = "150"
+let g:highlightedyank_highlight_color = "rgba(198, 120, 221, 155)"
