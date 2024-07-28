@@ -2,7 +2,7 @@
 " IdeaVimRC "
 """""""""""""
 " Keybinds for dealing with ~/.ideavimrc
-let g:WhichKeyDesc_ideavim                                       = "<leader>i +IdeaVim"
+let g:WhichKeyDesc_ideavim                                       = "<leader>i \ue62b IdeaVim"
 
 " Open a new tab to edit ~/.ideavimrc
 let g:WhichKeyDesc_ideavim_edit                                  = "<leader>ie Edit .ideavimrc"

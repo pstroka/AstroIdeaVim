@@ -2,7 +2,7 @@
 " Menus "
 """""""""
 " File, Edit, View, ...etc 
-let g:WhichKeyDesc_main_menus                                    = "<leader>m +Main Menus"
+let g:WhichKeyDesc_main_menus                                    = "<leader>m \udb80\udf5c Main Menus"
 
 let g:WhichKeyDesc_main_menus_all                                = "<leader>mm All Menus"
 map <leader>mm <Action>(MainMenu)

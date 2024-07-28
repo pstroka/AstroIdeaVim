@@ -1,4 +1,4 @@
-let g:WhichKeyDesc_git                                    = "<leader>g +Git"
+let g:WhichKeyDesc_git                                    = "<leader>g \udb80\udea2 Git"
 
 let g:WhichKeyDesc_git_status                             = "<leader>gt Git status"
 map <leader>gt <Action>(Vcs.Show.Local.Changes)

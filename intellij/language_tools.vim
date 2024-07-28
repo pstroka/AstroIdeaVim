@@ -1,4 +1,4 @@
-let g:WhichKeyDesc_language_tools                                             = "<leader>l +Language Tools"
+let g:WhichKeyDesc_language_tools                                             = "<leader>l \uf085 Language Tools"
 
 let g:WhichKeyDesc_language_tools_code_actions                                = "<leader>la Code Actions"
 map <leader>la <Action>(ShowIntentionActions)

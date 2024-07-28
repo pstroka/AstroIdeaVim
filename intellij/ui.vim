@@ -2,19 +2,22 @@
 " UI "
 """"""
 " Clear search highlight, change color scheme, toggle zen/fullscreen, etc...
-let g:WhichKeyDesc_ui                                                          = "<leader>u +UI"
+let g:WhichKeyDesc_ui                                                          = "<leader>u \ueb7f UI/UX"
 
 " Clear search highlight
 let g:WhichKeyDesc_ui_clear_search_highlight                                   = "<leader>uu Clear Search Highlight"
 map <leader>uu :noh<cr>
+
+let g:WhichKeyDesc_ui_toggle_all_tool_windows                                  = "<leader>ut Toggle All Tool Windows"
+map <leader>ut <Action>(HideAllWindows)
 
 " Toggle line numbers
 let g:WhichKeyDesc_ui_toggle_line_numbers                                      = "<leader>ul Toggle Line Numbers"
 map <leader>ul <Action>(EditorToggleShowLineNumbers)
 
 " Switch colorscheme theme
-let g:WhichKeyDesc_ui_switch_theme                                             = "<leader>ut Switch Theme"
-map <leader>ut <Action>(ChangeLaf)
+let g:WhichKeyDesc_ui_switch_theme                                             = "<leader>uT Switch Theme"
+map <leader>uT <Action>(ChangeLaf)
 
 "" View Modes
 " Distraction and Zen Mode now opens with line numbers enabled

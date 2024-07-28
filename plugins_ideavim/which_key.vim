@@ -15,9 +15,11 @@ set which-key
 " `set timeoutlen=1000` Default value is 1000 ms. Change to your preference
 set notimeout
 
+let g:WhichKey_ShowVimActions = "true"
+
 " Styling the appearance
 " https://github.com/TheBlob42/idea-which-key#appearance
-let g:WhichKey_SortOrder = "by_key_prefix_first"
+let g:WhichKey_SortOrder = "by_key_prefix_last"
 let g:WhichKey_SortCaseSensitive = "false"
 let g:WhichKey_KeyColor = "keyword"
 let g:WhichKey_PrefixColor = "#6fa4de"
@@ -35,4 +37,4 @@ let g:WhichKey_CommandStyle = "italic"
             " Personally not an issue for me as I only use cxx and X
             " YouTrack Issue: VIM-3193
     " Make sure to RESTART IntelliJ after you enable/disable this option for it to take effect.
-" let g:WhichKey_ProcessUnknownMappings = "false"
+let g:WhichKey_ProcessUnknownMappings = "false"

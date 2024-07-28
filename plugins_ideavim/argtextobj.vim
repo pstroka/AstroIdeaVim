@@ -17,9 +17,9 @@ let g:argtextobj_pairs="(:),[:],{:},<:>"
 
 "" Which-Key mapping descriptions
 " Disable the description
-let g:WhichKeyDesc_txtobj_arg_around = "aa"
-let g:WhichKeyDesc_txtobj_arg_inner = "ia"
+" let g:WhichKeyDesc_txtobj_arg_around = "aa"
+" let g:WhichKeyDesc_txtobj_arg_inner = "ia"
 
 " Add custom descriptions - if you want these descriptions, just copy paste them into your ~/.ideavimrc file to override
-"let g:WhichKeyDesc_txtobj_arg_around = "aa Select around argument (argtextobj)"
-"let g:WhichKeyDesc_txtobj_arg_inner = "ia Select inner argument (argtextobj)"
+let g:WhichKeyDesc_txtobj_arg_around = "aa around argument (argtextobj)"
+let g:WhichKeyDesc_txtobj_arg_inside = "ia inside argument (argtextobj)"

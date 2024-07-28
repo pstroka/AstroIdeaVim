@@ -2,7 +2,7 @@
 " Code Folding "
 """"""""""""""""
 " Collapse/expand regions
-let g:WhichKeyDesc_folding                                       = "<leader>z +Code Folding"
+let g:WhichKeyDesc_folding                                       = "<leader>z \uf48c Code Folding"
 
 " Toggle code folding
 let g:WhichKeyDesc_folding_toggle                                = "<leader>zz Toggle Folding"

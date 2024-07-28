@@ -2,7 +2,7 @@
 ".AstroIdeaVim "
 """"""""""""
 " My personal setup and config for IntelliJ + IdeaVim - https://github.com/pstroka/AstroIdeaVim
-" Import this in your .ideavimrc file (source ~/.AstroIdeaVim/AstroIdea.vim)
+" Import this in your .ideavimrc file (source ~/.AstroIdeaVim/astro_idea.vim)
 
 " TIP: Do the commands :map, :nmap, :vmap to see current keymaps
 " TIP: If you want to use the home row keys to navigate IDE's menus/popups, set the following keybinds:
@@ -33,28 +33,21 @@ source ~/.AstroIdeaVim/ideavimrc.vim
 " Menus - mappings to various menus
 source ~/.AstroIdeaVim/intellij/menus.vim
 
-" Code Actions - show intention actions, reformat code, refactor, etc...
-source ~/.AstroIdeaVim/intellij/code_actions.vim
+" Language tools - show intention actions, reformat code, refactor, etc...
+source ~/.AstroIdeaVim/intellij/language_tools.vim
 
 source ~/.AstroIdeaVim/intellij/git.vim
 
-" Search, Find, Replace - find and replace, and search: everywhere, classes, files, actions, locations, etc...
-source ~/.AstroIdeaVim/intellij/searchfindreplace.vim
+source ~/.AstroIdeaVim/intellij/session.vim
 
-" Files - open and search files
-source ~/.AstroIdeaVim/intellij/files.vim
+" Search and replace
+source ~/.AstroIdeaVim/intellij/replace.vim
 
-" View - view hover info, quick definition, find usages, etc..
-source ~/.AstroIdeaVim/intellij/view.vim
+" Find - find words, files, buffers, etc...
+source ~/.AstroIdeaVim/intellij/find.vim
 
-" Tab Splits - navigate and manage tab splits
-source ~/.AstroIdeaVim/intellij/splits.vim
-
-" Window Management & Navigation - navigate and manage project/tool/tab windows
-source ~/.AstroIdeaVim/intellij/windows.vim
-
-" Bookmarks - manage bookmarks
-source ~/.AstroIdeaVim/intellij/bookmarks.vim
+" Buffers - manage buffers
+source ~/.AstroIdeaVim/intellij/buffers.vim
 
 " Code Folding - collapse/expand regions
 source ~/.AstroIdeaVim/intellij/folding.vim

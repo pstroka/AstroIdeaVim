@@ -4,7 +4,9 @@
 
 let g:WhichKeyDesc_leader = "<leader> +Leader"
 
-let g:WhichKeyDesc_goto_definition = "gy Definition of current type"
+let g:WhichKeyDesc_goto_symbol_definition = "gd Definition of current symbol"
+
+let g:WhichKeyDesc_goto_type_definition = "gy Definition of current type"
 map gy <Action>(GotoTypeDeclaration)
 
 let g:WhichKeyDesc_goto_implementation = "gI Implementation of current symbol"
@@ -47,7 +49,8 @@ map vaf 0]Mv[M$wo
 let g:WhichKeyDesc_visual_inside_function = "vif inside function"
 map vif 0]Mvi{
 
-map " <Action>(PasteMultiple)
+let g:WhichKeyDesc_choose_paste = "<leader>\" Choose content to paste"
+map <leader>" <Action>(PasteMultiple)
 
 map S ddO
 
@@ -76,6 +79,16 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+map <C-A-Up> <Action>(StretchSplitToTop)
+map <C-A-Down> <Action>(StretchSplitToBottom)
+map <C-A-Left> <Action>(StretchSplitToLeft)
+map <C-A-Right> <Action>(StretchSplitToRight)
+
+map <A-Up> <Action>(ResizeToolWindowUp)
+map <A-Down> <Action>(ResizeToolWindowDown)
+map <A-Left> <Action>(ResizeToolWindowLeft)
+map <A-Right> <Action>(ResizeToolWindowRight)
+
 map \ <Action>(SplitHorizontally)
 map <Bar> <Action>(SplitVertically)
 
@@ -91,9 +104,6 @@ map <A-S-K> <Action>(MoveLineUp)
 " TIP: When in the Terminal, press Escape to switch focus back to the editor without closing Terminal
 map <C-t> <Action>(ActivateTerminalToolWindow)
 
-" Recent Projects
-let g:WhichKeyDesc_recent_projects    = "<leader>SF Recent Projects"
-map <leader>SF <Action>(RecentProjectListGroup)
 
 " Easier prefixing with blackhole register ("_)
     " Use case for blackhole register: deleting something while maintaining your current yanked code
@@ -109,3 +119,5 @@ map <leader>' "_
 " Solves the use case mentioned above for the "x" key
 noremap x "_x
 
+" Clear search highlight from the previous session at startup
+noh
