@@ -37,4 +37,4 @@ let g:WhichKey_CommandStyle = "italic"
             " Personally not an issue for me as I only use cxx and X
             " YouTrack Issue: VIM-3193
     " Make sure to RESTART IntelliJ after you enable/disable this option for it to take effect.
-let g:WhichKey_ProcessUnknownMappings = "false"
+" let g:WhichKey_ProcessUnknownMappings = "false"
